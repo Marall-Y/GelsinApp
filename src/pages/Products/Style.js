@@ -7,6 +7,12 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     minHeight: "100vh",
   },
+  products: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    minHeight: "90vh",
+    padding: "5%",
+  },
   typeBox: {
     backgroundColor: "#fff",
     padding: "4%",

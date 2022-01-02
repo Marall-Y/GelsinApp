@@ -5,9 +5,10 @@ import { Box } from "@material-ui/core";
 import useStyles from "./Style";
 
 const Products = () => {
+  const classes = useStyles();
   const [data, setData] = useState([]);
   const [selectedData, setSelectedData] = useState([]);
-  const classes = useStyles();
+  const [selectedCategory, setSelectedCategory] = useState([]);
 
   const pathname = window.location.pathname.split("/");
 
@@ -21,16 +22,29 @@ const Products = () => {
     }
   }, []);
 
+  console.log("data", data);
+
   useEffect(() => {
-    const selectedcategory = data.filter((item) => item.path == pathname[1]);
-    setSelectedData(selectedcategory[0].products);
+    const selectedCategory = data.filter((item) => item.path == pathname[1]);
+    setSelectedCategory(selectedCategory);
   }, [data]);
+
+  useEffect(() => {
+    if (selectedCategory.length > 0) {
+      setSelectedData(selectedCategory[0].products);
+    } else {
+      setSelectedData([]);
+    }
+  }, [selectedCategory]);
+
+  console.log("selectedCAtegory", selectedCategory);
+  console.log("selectedData", selectedData);
 
   return (
     <div>
       <Header />
       <div className={classes.container}>
-        <Box className={classes.categories}>
+        <Box className={classes.products}>
           {selectedData.map((item) => (
             <div className={classes.typeBox}>
               <img src={item.image} />

@@ -25,5 +25,47 @@
       "password": 9261,
       "phone": "05414377595"
     }
+  ],
+  "categories:": [
+    {
+      "id": 1,
+      "title": "Atıştırmalık",
+      "image": "https://imagizer.imageshack.com/img922/7687/0Jbejs.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Su",
+      "image": "https://imagizer.imageshack.com/img923/498/jkswHy.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Dondurma",
+      "image": "https://imagizer.imageshack.com/img922/9876/8eQHOu.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Sebze & Meyve",
+      "image": "https://imagizer.imageshack.com/img924/6467/ZuiYBm.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Yiyecek",
+      "image": "https://imagizer.imageshack.com/img923/1016/U5nFXA.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Içecek",
+      "image": "https://imagizer.imageshack.com/img924/1994/MmnkHL.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Fırından",
+      "image": "https://imagizer.imageshack.com/img922/9964/l6Zyze.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Çay ve Kahve",
+      "image": "https://imagizer.imageshack.com/img923/1010/IxyIKO.jpg"
+    }
   ]
 }

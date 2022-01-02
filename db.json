@@ -31,6 +31,7 @@
       "id": 1,
       "title": "Atıştırmalık",
       "image": "https://imagizer.imageshack.com/img922/7687/0Jbejs.jpg",
+      "path": "Atistirmalik",
       "products": [
         {
           "title": "Balocco Gofret Fındıklı",
@@ -58,6 +59,7 @@
       "id": 2,
       "title": "Su",
       "image": "https://imagizer.imageshack.com/img923/498/jkswHy.jpg",
+      "path": "Su",
       "products": [
         { "title": "Cam Su", "weight": "15 Lt", "price": "101TL" },
         { "title": "Ceysu Pet Su", "weight": "33 Lt", "price": "21,9TL" },
@@ -69,6 +71,7 @@
       "id": 3,
       "title": "Dondurma",
       "image": "https://imagizer.imageshack.com/img922/9876/8eQHOu.jpg",
+      "path": "Dondurma",
       "products": [
         {
           "title": "Mis Gold Kaymaklı Yarım Yağlı Dondurma",
@@ -96,6 +99,7 @@
       "id": 4,
       "title": "Sebze & Meyve",
       "image": "https://imagizer.imageshack.com/img924/6467/ZuiYBm.jpg",
+      "path": "Sebze",
       "products": [
         { "title": "Patates", "weight": "Kg", "price": "4,9TL" },
         { "title": "Soğan Kırmızı", "weight": "Kg", "price": "1,9TL" },
@@ -107,6 +111,7 @@
       "id": 5,
       "title": "Yiyecek",
       "image": "https://imagizer.imageshack.com/img923/1016/U5nFXA.jpg",
+      "path": "Yiyecek",
       "products": [
         { "title": "Vatan Ton Balığı", "weight": "160 Gr", "price": "16,9TL" },
         {
@@ -130,6 +135,7 @@
       "id": 6,
       "title": "Içecek",
       "image": "https://imagizer.imageshack.com/img924/1994/MmnkHL.jpg",
+      "path": "Icecek",
       "products": [
         {
           "title": "Eskipazar Maden Suyu",
@@ -157,6 +163,7 @@
       "id": 7,
       "title": "Fırından",
       "image": "https://imagizer.imageshack.com/img922/9964/l6Zyze.jpg",
+      "path": "Firindan",
       "products": [
         { "title": "Odun Ekmek", "weight": "200 Gr", "price": "2,95TL" },
         {
@@ -172,6 +179,7 @@
       "id": 8,
       "title": "Çay ve Kahve",
       "image": "https://imagizer.imageshack.com/img923/1010/IxyIKO.jpg",
+      "path": "Cay",
       "products": [
         {
           "title": "Deren Ice Tea Şeftali ",

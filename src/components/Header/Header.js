@@ -114,7 +114,7 @@ const Header = () => {
               style={{ width: 300, backgroundColor: primary[1] }}
               id="combo-box-demo"
               options={categories}
-              getOptionLabel={(option) => option.label}
+              getOptionLabel={(option) => option.label || ""}
               value={category}
               onChange={(event, newValue) => {
                 setCategory(newValue);

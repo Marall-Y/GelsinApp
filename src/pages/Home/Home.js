@@ -29,6 +29,7 @@ const Home = () => {
             <Link
               to={item.title}
               style={{ textDecoration: "none", color: "#000" }}
+              key={item.id}
             >
               <div className={classes.typeBox}>
                 <img src={item.image} />

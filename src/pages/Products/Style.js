@@ -10,13 +10,14 @@ const useStyles = makeStyles((theme) => ({
   products: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-    minHeight: "90vh",
+    minHeight: "80vh",
     padding: "5%",
   },
   typeBox: {
     backgroundColor: "#fff",
     padding: "4%",
     display: "flex",
+    justifyContent: "space-between",
     flexDirection: "column",
     border: "solid 1px #eee",
     borderRadius: "40px",
@@ -29,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
       border: `1px solid ${primary[0]}`,
     },
   },
+  button: { marginTop: "-12px", backgroundColor: "#62CD7D", color: "#fff" },
 }));
 
 export default useStyles;

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "../../axios-orders";
 import Header from "../../components/Header/Header";
-import { Box } from "@material-ui/core";
+import Cart from "@material-ui/icons/ShoppingCart";
+import { Box, Button } from "@material-ui/core";
 import useStyles from "./Style";
 
 const Products = () => {
@@ -51,16 +52,32 @@ const Products = () => {
               <div
                 style={{
                   margin: "10px",
+                  padding: "10px",
                   fontWeight: "bold",
                   fontSize: "1rem",
                   borderBottom: "1px solid #eee",
                 }}
               >
-                {item.title}
+                <div> {item.title}</div>
                 <br />
-                {item.weight}
+                <br />
+                <div style={{ color: "#888" }}>{item.weight}</div>
               </div>
-              <div>{item.price}</div>
+              <div style={{ display: "flex", justifyContent: "space-around" }}>
+                <div style={{ fontWeight: "bold", fontSize: "1rem" }}>
+                  {item.price}
+                </div>
+                <div>
+                  <Button
+                    variant="contained"
+                    color="default"
+                    startIcon={<Cart />}
+                    className={classes.button}
+                  >
+                    Sepete Ekle
+                  </Button>
+                </div>
+              </div>
             </div>
           ))}
         </Box>

@@ -27,7 +27,7 @@ const Home = () => {
         <Box className={classes.categories}>
           {data.map((item) => (
             <Link
-              to={item.title}
+              to={item.path}
               style={{ textDecoration: "none", color: "#000" }}
               key={item.id}
             >

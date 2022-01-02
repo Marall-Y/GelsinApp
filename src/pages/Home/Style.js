@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     margin: "10px",
     textAlign: "center",
     boxShaodw: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-
     "&:hover": {
       opacity: [0.9, 0.8, 0.7],
       cursor: "pointer",

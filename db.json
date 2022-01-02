@@ -36,22 +36,26 @@
         {
           "title": "Balocco Gofret Fındıklı",
           "weight": "250GR",
-          "price": "34,90TL"
+          "price": "34,90TL",
+          "image": "https://imagizer.imageshack.com/img923/3500/u9fsx2.jpg"
         },
         {
           "title": "Balocco Gofret Kakaolu",
           "weight": "250GR",
-          "price": "34,90TL"
+          "price": "34,90TL",
+          "image": "https://imagizer.imageshack.com/img922/5471/Lg06hC.jpg"
         },
         {
           "title": "Balocco Gofret Latte",
           "weight": "250GR",
-          "price": "34,90TL"
+          "price": "34,90TL",
+          "image": "https://imagizer.imageshack.com/img923/102/fEDLHM.jpg"
         },
         {
           "title": "Bergen Cookies",
           "weight": "110GR",
-          "price": "15,90TL"
+          "price": "15,90TL",
+          "image": "https://imagizer.imageshack.com/img923/7830/43g7Ot.jpg"
         }
       ]
     },

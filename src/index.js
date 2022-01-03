@@ -1,8 +1,14 @@
-import axios from "axios";
 import React from "react";
 import history from "./history";
 import * as ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./store";
 
 import App from "./App";
 
-ReactDOM.render(<App history={history} />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App history={history} />
+  </Provider>,
+  document.getElementById("root")
+);

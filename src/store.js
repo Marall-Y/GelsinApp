@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import { loadState, saveState } from "./src/utils/localStorage";
+import { loadState, saveState } from "./utils/localStorage";
 
 // import { cartReducer } from "./redux/reducers/cart/cartReducer";
 // import { loginReducer } from "./redux/reducers/login/loginReducer";

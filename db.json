@@ -37,28 +37,28 @@
           "id": 1,
           "title": "Balocco Gofret Fındıklı",
           "weight": "250GR",
-          "price": "34,90TL",
+          "price": "34,90",
           "image": "https://imagizer.imageshack.com/img923/3500/u9fsx2.jpg"
         },
         {
           "id": 2,
           "title": "Balocco Gofret Kakaolu",
           "weight": "250GR",
-          "price": "34,90TL",
+          "price": "34,90",
           "image": "https://imagizer.imageshack.com/img922/5471/Lg06hC.jpg"
         },
         {
           "id": 3,
           "title": "Balocco Gofret Latte",
           "weight": "250GR",
-          "price": "34,90TL",
+          "price": "34,90",
           "image": "https://imagizer.imageshack.com/img923/102/fEDLHM.jpg"
         },
         {
           "id": 4,
           "title": "Bergen Cookies",
           "weight": "110GR",
-          "price": "15,90TL",
+          "price": "15,90",
           "image": "https://imagizer.imageshack.com/img923/7489/vnSugc.jpg"
         }
       ]
@@ -73,28 +73,28 @@
           "id": 1,
           "title": "Cam Su",
           "weight": "15 Lt",
-          "price": "101TL",
+          "price": "101",
           "image": "https://imagizer.imageshack.com/img923/7136/aY3xhA.jpg"
         },
         {
           "id": 2,
           "title": "Ceysu Pet Su",
           "weight": "33 Lt",
-          "price": "21,9TL",
+          "price": "21,9",
           "image": "https://imagizer.imageshack.com/img922/7138/DnPu61.jpg"
         },
         {
           "id": 3,
           "title": "Madran Minyon Su",
           "weight": "20 Lt",
-          "price": "2,95TL",
+          "price": "2,95",
           "image": "https://imagizer.imageshack.com/img922/74/eiJfwH.jpg"
         },
         {
           "id": 4,
           "title": "Erikli Pet Su",
           "weight": "15 Lt",
-          "price": "101TL",
+          "price": "101",
           "image": "https://imagizer.imageshack.com/img924/567/m4diCo.jpg"
         }
       ]
@@ -109,28 +109,28 @@
           "id": 1,
           "title": "Mis Gold Kaymaklı Yarım Yağlı Dondurma",
           "weight": "1000 Ml",
-          "price": "29,5TL",
+          "price": "29,5",
           "image": "https://imagizer.imageshack.com/img923/6569/3pH35j.jpg"
         },
         {
           "id": 2,
           "title": "Maraşım Sade Dondurma",
           "weight": "500 Ml",
-          "price": "29,5TL",
+          "price": "29,5",
           "image": "https://imagizer.imageshack.com/img923/3029/xTis49.jpg"
         },
         {
           "id": 3,
           "title": "Mis Çilek Vanilya Kakao",
           "weight": "500 Ml",
-          "price": "29,5TL",
+          "price": "29,5",
           "image": "https://imagizer.imageshack.com/img923/751/QJGGK1.jpg"
         },
         {
           "id": 4,
           "title": "Gold Meyve Sepeti ",
           "weight": "500 Ml",
-          "price": "29,5TL",
+          "price": "29,5",
           "image": "https://imagizer.imageshack.com/img923/8152/JvYSSd.jpg"
         }
       ]
@@ -145,28 +145,28 @@
           "id": 1,
           "title": "Patates",
           "weight": "Kg",
-          "price": "4,9TL",
+          "price": "4,9",
           "image": "https://imagizer.imageshack.com/img924/2985/TJHFlp.jpg"
         },
         {
           "id": 2,
           "title": "Soğan Kırmızı",
           "weight": "Kg",
-          "price": "1,9TL",
+          "price": "1,9",
           "image": "https://imagizer.imageshack.com/img922/2070/Eox4k2.jpg"
         },
         {
           "id": 3,
           "title": "Soğan Kuru",
           "weight": "Kg",
-          "price": "3,9TL",
+          "price": "3,9",
           "image": "https://imagizer.imageshack.com/img924/4550/kaA8zx.jpg"
         },
         {
           "id": 4,
           "title": "Sarımsak Kuru",
           "weight": "Kg",
-          "price": "4,9TL",
+          "price": "4,9",
           "image": "https://imagizer.imageshack.com/img922/5371/Zx6SVa.jpg"
         }
       ]
@@ -181,28 +181,28 @@
           "id": 1,
           "title": "Vatan Ton Balığı",
           "weight": "160 Gr",
-          "price": "16,9TL",
+          "price": "16,9",
           "image": "https://imagizer.imageshack.com/img923/7552/Wz46sR.jpg"
         },
         {
           "id": 2,
           "title": "Superfresh Ton Balığ",
           "weight": "160 Gr",
-          "price": "17,9TL",
+          "price": "17,9",
           "image": "https://imagizer.imageshack.com/img924/2112/XisLtN.jpg"
         },
         {
           "id": 3,
           "title": "Dardanel Ton Wich Ton Balıklı",
           "weight": "160 Gr",
-          "price": "21,9TL",
+          "price": "21,9",
           "image": "https://imagizer.imageshack.com/img922/6337/UXFUjP.jpg"
         },
         {
           "id": 4,
           "title": "Superfresh Ton Balığı Zeytinyağlı",
           "weight": "160 Gr",
-          "price": "16,9TL",
+          "price": "16,9",
           "image": "https://imagizer.imageshack.com/img922/285/iXZfEU.jpg"
         }
       ]
@@ -217,28 +217,28 @@
           "id": 1,
           "title": "Eskipazar Maden Suyu",
           "weight": "200Ml",
-          "price": "1,5TL",
+          "price": "1,5",
           "image": "https://imagizer.imageshack.com/img924/121/q8fQOB.jpg"
         },
         {
           "id": 2,
           "title": "Crown Cola",
           "weight": "200Ml",
-          "price": "2,5TL",
+          "price": "2,5",
           "image": "https://imagizer.imageshack.com/img922/2191/Uz5EGS.jpg"
         },
         {
           "id": 3,
           "title": "Crown Mandalina",
           "weight": "200Ml",
-          "price": "6,5TL",
+          "price": "6,5",
           "image": "https://imagizer.imageshack.com/img922/1723/s47FYT.jpg"
         },
         {
           "id": 4,
           "title": "Mis Meyve Nektarı Şeftali",
           "weight": "200Ml",
-          "price": "3,5TL",
+          "price": "3,5",
           "image": "https://imagizer.imageshack.com/img922/9708/TZfcBr.jpg"
         }
       ]
@@ -253,28 +253,28 @@
           "id": 1,
           "title": "Odun Ekmek",
           "weight": "200 Gr",
-          "price": "2,95TL",
+          "price": "2,95",
           "image": "https://imagizer.imageshack.com/img924/3361/JWwL7U.jpg"
         },
         {
           "id": 2,
           "title": "Uno Anadolu Köy Ekmeği",
           "weight": "200 Gr",
-          "price": "2,95TL",
+          "price": "2,95",
           "image": "https://imagizer.imageshack.com/img923/7695/mQeJVt.jpg"
         },
         {
           "id": 3,
           "title": "Bisto Lavaş",
           "weight": "200 Gr",
-          "price": "2,95TL",
+          "price": "2,95",
           "image": "https://imagizer.imageshack.com/img922/5268/tlaVtd.jpg"
         },
         {
           "id": 4,
           "title": "Bisto Yağlı Gevrek",
           "weight": "200 Gr",
-          "price": "2,95TL",
+          "price": "2,95",
           "image": "https://imagizer.imageshack.com/img922/6430/Q7NejC.jpg"
         }
       ]
@@ -289,28 +289,28 @@
           "id": 1,
           "title": "Deren Ice Tea Şeftali ",
           "weight": " 330 Ml",
-          "price": "2,45TL",
+          "price": "2,45",
           "image": "https://imagizer.imageshack.com/img922/657/pKLxwQ.jpg"
         },
         {
           "id": 2,
           "title": "Lezzcafe Latte ",
           "weight": " 330 Ml",
-          "price": "2,45TL",
+          "price": "2,45",
           "image": "https://imagizer.imageshack.com/img922/6818/Nr63DG.jpg"
         },
         {
           "id": 3,
           "title": "Deren Ice Tea Şeftali ",
           "weight": " 330 Ml",
-          "price": "2,45TL",
+          "price": "2,45",
           "image": "https://imagizer.imageshack.com/img924/8746/19czWp.jpg"
         },
         {
           "id": 4,
           "title": "Fuse Tea Karpuz Pet ",
           "weight": " 330 Ml",
-          "price": "2,45TL",
+          "price": "2,45",
           "image": "https://imagizer.imageshack.com/img923/9407/dTaWAI.jpg"
         }
       ]

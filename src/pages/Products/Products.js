@@ -79,7 +79,7 @@ const Products = () => {
                     marginBottom: "10px",
                   }}
                 >
-                  {item.price}
+                  {item.price}TL
                 </div>
                 <div> {item.title}</div>
                 <br />

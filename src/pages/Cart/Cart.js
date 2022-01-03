@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Container, Button } from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import CartIcon from "@material-ui/icons/ShoppingCart";
 import Header from "../../components/Header/Header";
 import CartItem from "./CartItem/CartItem";
 import useStyles from "./Style";
@@ -36,16 +38,24 @@ const Cart = () => {
             })}
           </div>
           <div className={classes.cartSummary}>
-            <h3>Sepetiniz</h3>
             <div className={classes.price}>
-              <span>Toplam: {totalItems} Addet</span>
-              <span>$ {totalPrice}</span>
-            </div>
+              <div
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1rem",
+                  marginBottom: "5px",
+                }}
+              >
+                {totalItems} Addet
+              </div>
+              <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
+                Toplam Tutar: {totalPrice} TL
+              </div>
+            </div>{" "}
             <Button
               variant="contained"
-              startIcon={<Cart />}
+              startIcon={<CartIcon />}
               className={classes.button}
-              // onClick={() => addToCard(item)}
             >
               Sepeti Onayla
             </Button>
@@ -59,7 +69,6 @@ const Cart = () => {
           </div>
         </Container>
       )}
-      {/* <Footer/> */}
     </div>
   );
 };

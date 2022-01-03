@@ -11,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
   },
   cartSummary: {
     backgroundColor: "#fff",
-    height: "45vh",
+    height: "35vh",
     flex: 0.3,
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     padding: "1rem",
     borderRadius: "10px",
     boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px",
@@ -23,10 +23,13 @@ const useStyles = makeStyles((theme) => ({
   price: {
     display: "flex",
     alignItems: "center",
+    flexDirection: "column",
   },
   button: {
     backgroundColor: "#62CD7D",
     color: "#fff",
+    height: "25%",
+    fontSize: "1rem",
   },
 }));
 

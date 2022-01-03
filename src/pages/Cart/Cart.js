@@ -19,6 +19,8 @@ const Cart = () => {
     let price = 0;
 
     cart.forEach((item) => {
+      console.log("item.qty", item.qty);
+      console.log("item.price", item.price);
       items += item.qty;
       price += item.qty * item.price;
     });

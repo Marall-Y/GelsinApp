@@ -16,10 +16,13 @@ export const cartReducer = (state = initialState, action) => {
         cart: inCart
           ? state.cart.map((item) =>
               item.title === action.payload.data.title
-                ? { ...item, qty: item.qty + 1, checked: true }
+                ? { ...item, qty: item.qty + 1, checked: "true" }
                 : item
             )
-          : [...state.cart, { ...action.payload.data, qty: 1, checked: true }],
+          : [
+              ...state.cart,
+              { ...action.payload.data, qty: 1, checked: "true" },
+            ],
       };
 
       setItem("cart", newCart);

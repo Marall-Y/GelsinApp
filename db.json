@@ -39,7 +39,7 @@
           "weight": "250GR",
           "price": "34,90TL",
           "image": "https://imagizer.imageshack.com/img923/3500/u9fsx2.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -47,7 +47,7 @@
           "weight": "250GR",
           "price": "34,90TL",
           "image": "https://imagizer.imageshack.com/img922/5471/Lg06hC.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -55,7 +55,7 @@
           "weight": "250GR",
           "price": "34,90TL",
           "image": "https://imagizer.imageshack.com/img923/102/fEDLHM.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -63,7 +63,7 @@
           "weight": "110GR",
           "price": "15,90TL",
           "image": "https://imagizer.imageshack.com/img923/7489/vnSugc.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -79,7 +79,7 @@
           "weight": "15 Lt",
           "price": "101TL",
           "image": "https://imagizer.imageshack.com/img923/7136/aY3xhA.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -87,7 +87,7 @@
           "weight": "33 Lt",
           "price": "21,9TL",
           "image": "https://imagizer.imageshack.com/img922/7138/DnPu61.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -95,7 +95,7 @@
           "weight": "20 Lt",
           "price": "2,95TL",
           "image": "https://imagizer.imageshack.com/img922/74/eiJfwH.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -103,7 +103,7 @@
           "weight": "15 Lt",
           "price": "101TL",
           "image": "https://imagizer.imageshack.com/img924/567/m4diCo.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -119,7 +119,7 @@
           "weight": "1000 Ml",
           "price": "29,5TL",
           "image": "https://imagizer.imageshack.com/img923/6569/3pH35j.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -127,7 +127,7 @@
           "weight": "500 Ml",
           "price": "29,5TL",
           "image": "https://imagizer.imageshack.com/img923/3029/xTis49.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -135,7 +135,7 @@
           "weight": "500 Ml",
           "price": "29,5TL",
           "image": "https://imagizer.imageshack.com/img923/751/QJGGK1.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -143,7 +143,7 @@
           "weight": "500 Ml",
           "price": "29,5TL",
           "image": "https://imagizer.imageshack.com/img923/8152/JvYSSd.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -159,7 +159,7 @@
           "weight": "Kg",
           "price": "4,9TL",
           "image": "https://imagizer.imageshack.com/img924/2985/TJHFlp.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -167,7 +167,7 @@
           "weight": "Kg",
           "price": "1,9TL",
           "image": "https://imagizer.imageshack.com/img922/2070/Eox4k2.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -175,7 +175,7 @@
           "weight": "Kg",
           "price": "3,9TL",
           "image": "https://imagizer.imageshack.com/img924/4550/kaA8zx.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -183,7 +183,7 @@
           "weight": "Kg",
           "price": "4,9TL",
           "image": "https://imagizer.imageshack.com/img922/5371/Zx6SVa.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -199,7 +199,7 @@
           "weight": "160 Gr",
           "price": "16,9TL",
           "image": "https://imagizer.imageshack.com/img923/7552/Wz46sR.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -207,7 +207,7 @@
           "weight": "160 Gr",
           "price": "17,9TL",
           "image": "https://imagizer.imageshack.com/img924/2112/XisLtN.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -215,7 +215,7 @@
           "weight": "160 Gr",
           "price": "21,9TL",
           "image": "https://imagizer.imageshack.com/img922/6337/UXFUjP.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -223,7 +223,7 @@
           "weight": "160 Gr",
           "price": "16,9TL",
           "image": "https://imagizer.imageshack.com/img922/285/iXZfEU.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -239,7 +239,7 @@
           "weight": "200Ml",
           "price": "1,5TL",
           "image": "https://imagizer.imageshack.com/img924/121/q8fQOB.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -247,7 +247,7 @@
           "weight": "200Ml",
           "price": "2,5TL",
           "image": "https://imagizer.imageshack.com/img922/2191/Uz5EGS.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -255,7 +255,7 @@
           "weight": "200Ml",
           "price": "6,5TL",
           "image": "https://imagizer.imageshack.com/img922/1723/s47FYT.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -263,7 +263,7 @@
           "weight": "200Ml",
           "price": "3,5TL",
           "image": "https://imagizer.imageshack.com/img922/9708/TZfcBr.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -279,7 +279,7 @@
           "weight": "200 Gr",
           "price": "2,95TL",
           "image": "https://imagizer.imageshack.com/img924/3361/JWwL7U.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -287,7 +287,7 @@
           "weight": "200 Gr",
           "price": "2,95TL",
           "image": "https://imagizer.imageshack.com/img923/7695/mQeJVt.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -295,7 +295,7 @@
           "weight": "200 Gr",
           "price": "2,95TL",
           "image": "https://imagizer.imageshack.com/img922/5268/tlaVtd.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -303,7 +303,7 @@
           "weight": "200 Gr",
           "price": "2,95TL",
           "image": "https://imagizer.imageshack.com/img922/6430/Q7NejC.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     },
@@ -319,7 +319,7 @@
           "weight": " 330 Ml",
           "price": "2,45TL",
           "image": "https://imagizer.imageshack.com/img922/657/pKLxwQ.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 2,
@@ -327,7 +327,7 @@
           "weight": " 330 Ml",
           "price": "2,45TL",
           "image": "https://imagizer.imageshack.com/img922/6818/Nr63DG.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 3,
@@ -335,7 +335,7 @@
           "weight": " 330 Ml",
           "price": "2,45TL",
           "image": "https://imagizer.imageshack.com/img924/8746/19czWp.jpg",
-          "checked": false
+          "checked": "false"
         },
         {
           "id": 4,
@@ -343,7 +343,7 @@
           "weight": " 330 Ml",
           "price": "2,45TL",
           "image": "https://imagizer.imageshack.com/img923/9407/dTaWAI.jpg",
-          "checked": false
+          "checked": "false"
         }
       ]
     }

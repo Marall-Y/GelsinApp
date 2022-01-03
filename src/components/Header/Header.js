@@ -102,15 +102,22 @@ const Header = () => {
           aria-haspopup="true"
           color="inherit"
         >
-          <AccountCircle />
+          <AccountCircle fontSize="large" />
         </IconButton>
         <p>Profile</p>
       </MenuItem>
       <MenuItem>
-        <IconButton aria-label="cart" color="inherit">
-          <Cart fontSize="large" />
-        </IconButton>
-        <p>Cart</p>
+        <Link
+          to="/cart"
+          style={{ color: "inherit", display: "flex", textDecoration: "none" }}
+        >
+          <IconButton aria-label="cart" color="inherit">
+            <Badge badgeContent={badgeContent} color="secondary">
+              <Cart fontSize="large" />
+            </Badge>
+          </IconButton>
+          <p>Cart</p>
+        </Link>
       </MenuItem>
     </Menu>
   );
@@ -158,17 +165,17 @@ const Header = () => {
             >
               <AccountCircle fontSize="large" />
             </IconButton>
-
-            <IconButton
-              aria-label="cart"
-              color="inherit"
-              style={{ margin: "0 10px " }}
-            >
-              {" "}
-              <Badge badgeContent={badgeContent} color="secondary">
-                <Cart fontSize="large" />{" "}
-              </Badge>
-            </IconButton>
+            <Link to="/cart" style={{ color: "inherit" }}>
+              <IconButton
+                aria-label="cart"
+                color="inherit"
+                style={{ margin: "0 10px " }}
+              >
+                <Badge badgeContent={badgeContent} color="secondary">
+                  <Cart fontSize="large" />{" "}
+                </Badge>
+              </IconButton>
+            </Link>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

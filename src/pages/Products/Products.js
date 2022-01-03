@@ -87,7 +87,15 @@ const Products = () => {
               </div>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
                 <div>
-                  {item.checked}
+                  <Button
+                    key={item.id}
+                    variant="contained"
+                    startIcon={<Cart />}
+                    className={classes.button}
+                    onClick={() => addToCard(item)}
+                  >
+                    Sepete Ekle
+                  </Button>
                   {/* {cart.map((cartItem) =>
                     cartItem.title === item.title ? (
                       <Button

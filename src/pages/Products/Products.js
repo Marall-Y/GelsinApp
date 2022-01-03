@@ -4,12 +4,16 @@ import Header from "../../components/Header/Header";
 import Cart from "@material-ui/icons/ShoppingCart";
 import { Box, Button } from "@material-ui/core";
 import useStyles from "./Style";
+import { primary } from "../../StyleGuide/Colors";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/actions/cart/cartAction";
 
 const Products = () => {
-  const classes = useStyles();
   const [data, setData] = useState([]);
   const [selectedData, setSelectedData] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState([]);
+  const classes = useStyles();
+  const dispatch = useDispatch();
 
   const pathname = window.location.pathname.split("/");
 
@@ -38,8 +42,9 @@ const Products = () => {
     }
   }, [selectedCategory]);
 
-  console.log("selectedCAtegory", selectedCategory);
-  console.log("selectedData", selectedData);
+  const addToCard = (product) => {
+    dispatch(addToCart(product));
+  };
 
   return (
     <div>
@@ -58,21 +63,28 @@ const Products = () => {
                   borderBottom: "1px solid #eee",
                 }}
               >
+                <div
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1rem",
+                    color: `${primary[0]}`,
+                    marginBottom: "10px",
+                  }}
+                >
+                  {item.price}
+                </div>
                 <div> {item.title}</div>
-                <br />
                 <br />
                 <div style={{ color: "#888" }}>{item.weight}</div>
               </div>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <div style={{ fontWeight: "bold", fontSize: "1rem" }}>
-                  {item.price}
-                </div>
                 <div>
                   <Button
                     variant="contained"
                     color="default"
                     startIcon={<Cart />}
                     className={classes.button}
+                    onClick={() => addToCard(item)}
                   >
                     Sepete Ekle
                   </Button>

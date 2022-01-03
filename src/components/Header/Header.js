@@ -95,7 +95,7 @@ const Header = () => {
       </MenuItem>
       <MenuItem>
         <IconButton aria-label="cart" color="inherit">
-          <Cart />
+          <Cart fontSize="large" />
         </IconButton>
         <p>Cart</p>
       </MenuItem>
@@ -143,14 +143,14 @@ const Header = () => {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircle fontSize="large" />
             </IconButton>
             <IconButton
               aria-label="cart"
               color="inherit"
               style={{ margin: "0 10px " }}
             >
-              <Cart />
+              <Cart fontSize="large" />
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>

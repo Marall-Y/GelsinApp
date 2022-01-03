@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -11,8 +11,9 @@ import logo from "../../images/Logo.png";
 import useStyles from "./Style";
 import { primary } from "../../StyleGuide/Colors";
 import { Autocomplete } from "@material-ui/lab";
-import { TextField } from "@material-ui/core";
+import { TextField, Badge } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const categories = [
   { label: "Atıştırmalık", year: 1994 },
@@ -30,10 +31,22 @@ const Header = () => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
   const [category, setCategory] = useState("");
   const [inputValue, setInputValue] = useState("");
-
+  const [badgeContent, setBadgeContent] = useState(0);
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
+  const { cart } = useSelector((state) => state.cart);
+
+  //hooks
+
+  useEffect(() => {
+    let count = 0;
+    cart.map((item) => (count += item.qty));
+
+    setBadgeContent(count);
+  }, [cart, badgeContent]);
+
+  //functions
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -145,12 +158,16 @@ const Header = () => {
             >
               <AccountCircle fontSize="large" />
             </IconButton>
+
             <IconButton
               aria-label="cart"
               color="inherit"
               style={{ margin: "0 10px " }}
             >
-              <Cart fontSize="large" />
+              {" "}
+              <Badge badgeContent={badgeContent} color="secondary">
+                <Cart fontSize="large" />{" "}
+              </Badge>
             </IconButton>
           </div>
           <div className={classes.sectionMobile}>

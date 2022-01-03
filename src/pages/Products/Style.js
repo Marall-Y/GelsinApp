@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
       border: `1px solid ${primary[0]}`,
     },
   },
-  button: { marginTop: "-12px", backgroundColor: "#62CD7D", color: "#fff" },
+  button: { marginTop: "10px", backgroundColor: "#62CD7D", color: "#fff" },
 }));
 
 export default useStyles;

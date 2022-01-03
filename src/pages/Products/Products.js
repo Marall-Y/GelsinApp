@@ -1,21 +1,27 @@
 import React, { useState, useEffect } from "react";
 import axios from "../../axios-orders";
 import Header from "../../components/Header/Header";
+import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
 import Cart from "@material-ui/icons/ShoppingCart";
 import { Box, Button } from "@material-ui/core";
 import useStyles from "./Style";
 import { primary } from "../../StyleGuide/Colors";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/actions/cart/cartAction";
+import { getItem, setItem } from "../../utils/localStorage";
 
 const Products = () => {
   const [data, setData] = useState([]);
   const [selectedData, setSelectedData] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState([]);
+  const [clicked, setClicked] = useState(false);
   const classes = useStyles();
   const dispatch = useDispatch();
 
   const pathname = window.location.pathname.split("/");
+  const clickedId = getItem("clickedItem");
+
+  const { cart } = useSelector((state) => state.cart);
 
   useEffect(async () => {
     try {
@@ -26,8 +32,6 @@ const Products = () => {
       console.error(err);
     }
   }, []);
-
-  console.log("data", data);
 
   useEffect(() => {
     const selectedCategory = data.filter((item) => item.path == pathname[1]);
@@ -46,13 +50,17 @@ const Products = () => {
     dispatch(addToCart(product));
   };
 
+  useEffect(() => {
+    console.log("cart", cart);
+  }, [cart]);
+
   return (
     <div>
       <Header />
       <div className={classes.container}>
         <Box className={classes.products}>
           {selectedData.map((item) => (
-            <div className={classes.typeBox}>
+            <div className={classes.typeBox} key={item.id}>
               <img src={item.image} />
               <div
                 style={{
@@ -79,15 +87,29 @@ const Products = () => {
               </div>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
                 <div>
-                  <Button
-                    variant="contained"
-                    color="default"
-                    startIcon={<Cart />}
-                    className={classes.button}
-                    onClick={() => addToCard(item)}
-                  >
-                    Sepete Ekle
-                  </Button>
+                  {item.checked}
+                  {/* {cart.map((cartItem) =>
+                    cartItem.title === item.title ? (
+                      <Button
+                        key={item.id}
+                        variant="contained"
+                        color="default"
+                        startIcon={<DoneOutlineIcon />}
+                      >
+                        Sepete Eklendi
+                      </Button>
+                    ) : (
+                      <Button
+                        key={item.id}
+                        variant="contained"
+                        startIcon={<Cart />}
+                        className={classes.button}
+                        onClick={() => addToCard(item)}
+                      >
+                        Sepete Ekle
+                      </Button>
+                    )
+                  )} */}
                 </div>
               </div>
             </div>

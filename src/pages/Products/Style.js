@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
   products: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     minHeight: "80vh",
     padding: "5%",
   },
@@ -30,7 +30,13 @@ const useStyles = makeStyles((theme) => ({
       border: `1px solid ${primary[0]}`,
     },
   },
-  button: { marginTop: "10px", backgroundColor: "#62CD7D", color: "#fff" },
+  button: {
+    marginTop: "10px",
+    backgroundColor: "#62CD7D",
+    color: "#fff",
+    width: "150px",
+    fontSize: "0.7rem",
+  },
 }));
 
 export default useStyles;

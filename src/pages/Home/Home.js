@@ -37,7 +37,7 @@ const Home = () => {
                   style={{
                     margin: "10px",
                     fontWeight: "bold",
-                    fontSize: "1rem",
+                    fontSize: "0.8rem",
                   }}
                 >
                   {item.title}

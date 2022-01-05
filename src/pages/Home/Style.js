@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
   categories: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     minHeight: "90vh",
     padding: "5%",
   },

@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-evenly",
+    alignItems: "center",
     padding: "1rem",
     borderRadius: "10px",
     boxShadow: "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px",
@@ -28,8 +29,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     backgroundColor: "#62CD7D",
     color: "#fff",
-    height: "25%",
-    fontSize: "1rem",
+    fontSize: "0.7rem",
   },
 }));
 

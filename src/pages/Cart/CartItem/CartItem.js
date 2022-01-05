@@ -3,6 +3,7 @@ import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import { useDispatch } from "react-redux";
 import useStyles from "./Style";
 import { primary } from "../../../StyleGuide/Colors";
+import { removeFromCart } from "../../../redux/actions/cart/cartAction";
 
 const CartItem = ({ itemData }) => {
   const classes = useStyles();
@@ -26,10 +27,10 @@ const CartItem = ({ itemData }) => {
       </div>
 
       <div className={classes.cartDescription}>
-        <h3>{itemData.title}</h3>
+        <h4>{itemData.title}</h4>
         <p>{itemData.weight}</p>
         <div className={classes.lastDescription}>
-          <p style={{ color: `${primary[0]}` }}>{itemData.price}</p>
+          <p style={{ color: `${primary[0]}` }}>{itemData.price} TL</p>
           <div className={classes.cartQty}>
             <label style={{ marginRight: "0.2rem" }} htmlFor="qty">
               Adet
@@ -41,12 +42,12 @@ const CartItem = ({ itemData }) => {
               name="qty"
               value={input}
               className={classes.input}
-              //   onChange={onChangeHandler}
+              onChange={() => {}}
             />
           </div>
           <DeleteOutlineIcon
             style={{ cursor: "pointer" }}
-            // onClick={() => dispatch(removeFromCart(itemData))}
+            onClick={() => dispatch(removeFromCart(itemData))}
           />
         </div>
       </div>

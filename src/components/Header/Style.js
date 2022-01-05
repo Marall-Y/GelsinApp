@@ -4,7 +4,7 @@ import { primary } from "../../StyleGuide/Colors";
 const useStyles = makeStyles((theme) => ({
   logo: {
     margin: 10,
-    width: "10rem",
+    width: "7rem",
   },
   grow: {
     flexGrow: 1,

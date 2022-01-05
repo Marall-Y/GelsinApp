@@ -67,7 +67,7 @@ const Products = () => {
                   margin: "10px",
                   padding: "10px",
                   fontWeight: "bold",
-                  fontSize: "1rem",
+                  fontSize: "0.8rem",
                   borderBottom: "1px solid #eee",
                 }}
               >

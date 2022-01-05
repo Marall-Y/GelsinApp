@@ -102,7 +102,7 @@ const Header = () => {
           aria-haspopup="true"
           color="inherit"
         >
-          <AccountCircle fontSize="large" />
+          <AccountCircle />
         </IconButton>
         <p>Profile</p>
       </MenuItem>
@@ -113,7 +113,7 @@ const Header = () => {
         >
           <IconButton aria-label="cart" color="inherit">
             <Badge badgeContent={badgeContent} color="secondary">
-              <Cart fontSize="large" />
+              <Cart />
             </Badge>
           </IconButton>
           <p>Cart</p>
@@ -163,7 +163,7 @@ const Header = () => {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle fontSize="large" />
+              <AccountCircle />
             </IconButton>
             <Link to="/cart" style={{ color: "inherit" }}>
               <IconButton
@@ -172,7 +172,7 @@ const Header = () => {
                 style={{ margin: "0 10px " }}
               >
                 <Badge badgeContent={badgeContent} color="secondary">
-                  <Cart fontSize="large" />{" "}
+                  <Cart />{" "}
                 </Badge>
               </IconButton>
             </Link>

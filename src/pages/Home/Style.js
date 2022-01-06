@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   typeBox: {
     backgroundColor: "#fff",
-    padding: "4%",
+    padding: "5%",
     display: "flex",
     flexDirection: "column",
     border: "solid 1px #eee",

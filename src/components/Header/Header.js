@@ -19,7 +19,7 @@ import { getItem } from "../../utils/localStorage";
 
 const Header = () => {
   const classes = useStyles();
-  const userBadge = getItem("user");
+  const userBadge = getItem("user") || "";
   const [data, setData] = useState([]);
   const [options, setOptions] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -176,7 +176,7 @@ const Header = () => {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              {userBadge !== "" ? (
+              {Object.keys(userBadge).length !== 0 ? (
                 <Badge badgeContent={userBadge.name} color="secondary">
                   <AccountCircle />
                 </Badge>

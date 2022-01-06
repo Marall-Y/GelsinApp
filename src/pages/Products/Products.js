@@ -10,18 +10,23 @@ import { primary } from "../../StyleGuide/Colors";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/actions/cart/cartAction";
 import { getItem, setItem } from "../../utils/localStorage";
+import Snackbar from "@material-ui/core/Snackbar";
+import { SnackbarContent } from "@material-ui/core";
 
 const Products = () => {
   const [data, setData] = useState([]);
   const [selectedData, setSelectedData] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [clicked, setClicked] = useState(false);
+  const [state, setState] = React.useState({
+    open: false,
+    vertical: "top",
+    horizontal: "center",
+  });
   const classes = useStyles();
   const dispatch = useDispatch();
+  const { vertical, horizontal, open } = state;
 
   const pathname = window.location.pathname.split("/");
-  const clickedId = getItem("clickedItem");
-
   const { cart } = useSelector((state) => state.cart);
 
   useEffect(async () => {
@@ -47,13 +52,16 @@ const Products = () => {
     }
   }, [selectedCategory]);
 
-  const addToCard = (product) => {
-    dispatch(addToCart(product));
+  //functions
+
+  const handleClose = () => {
+    setState({ ...state, open: false });
   };
 
-  useEffect(() => {
-    console.log("cart", cart);
-  }, [cart]);
+  const addToCard = (product) => {
+    setState({ open: true, vertical: "top", horizontal: "center" });
+    dispatch(addToCart(product));
+  };
 
   return (
     <div>
@@ -97,33 +105,27 @@ const Products = () => {
                   >
                     Sepete Ekle
                   </Button>
-                  {/* {cart.map((cartItem) =>
-                    cartItem.title === item.title ? (
-                      <Button
-                        key={item.id}
-                        variant="contained"
-                        color="default"
-                        startIcon={<DoneOutlineIcon />}
-                      >
-                        Sepete Eklendi
-                      </Button>
-                    ) : (
-                      <Button
-                        key={item.id}
-                        variant="contained"
-                        startIcon={<Cart />}
-                        className={classes.button}
-                        onClick={() => addToCard(item)}
-                      >
-                        Sepete Ekle
-                      </Button>
-                    )
-                  )} */}
                 </div>
               </div>
             </div>
           ))}
         </Box>
+        <Snackbar
+          anchorOrigin={{ vertical, horizontal }}
+          open={open}
+          onClose={handleClose}
+          key={vertical + horizontal}
+        >
+          <SnackbarContent
+            aria-describedby="message-id2"
+            style={{ backgroundColor: "#6ECA7D" }}
+            message={
+              <span id="message-id2">
+                <div>Sepetinize Eklendi</div>
+              </span>
+            }
+          />
+        </Snackbar>
       </div>
       <Footer />
     </div>

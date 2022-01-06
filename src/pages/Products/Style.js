@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     width: "150px",
     fontSize: "0.7rem",
   },
+  snackContent: {
+    backgroundColor: "#6ECA7D",
+  },
 }));
 
 export default useStyles;

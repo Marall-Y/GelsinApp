@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   cartContainer: {
     display: "flex",
     justifyContent: "space-between",
-    marginTop: "5%",
+    padding: "2rem",
   },
   cartItems: {
     flex: "0.6",
@@ -33,12 +33,12 @@ const useStyles = makeStyles((theme) => ({
   },
   emptyCart: {
     width: "100%",
-    height: "50vh",
+    height: "60vh",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "5rem",
+    margin: "3rem 0",
   },
 }));
 

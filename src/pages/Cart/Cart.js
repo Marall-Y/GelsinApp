@@ -82,7 +82,7 @@ const Cart = () => {
     });
 
     setTotalItems(items);
-    setTotalPrice(price);
+    setTotalPrice(price.toFixed(2));
   }, [cart, totalItems, totalPrice, setTotalItems, setTotalPrice]);
 
   //Functions

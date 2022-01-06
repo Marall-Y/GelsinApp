@@ -14,19 +14,14 @@ import { Autocomplete } from "@material-ui/lab";
 import { TextField, Badge } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
-const categories = [
-  { label: "Atıştırmalık", year: 1994 },
-  { label: "Su", year: 1972 },
-  { label: "Dondurma", year: 1974 },
-  { label: "Sebze & Meyve", year: 2008 },
-  { label: "Yiyecek", year: 1957 },
-  { label: "Içecek", year: 1993 },
-  { label: "Fırından", year: 1994 },
-];
+import axios from "../../axios-orders";
+import { getItem } from "../../utils/localStorage";
 
 const Header = () => {
   const classes = useStyles();
+  const userBadge = getItem("user");
+  const [data, setData] = useState([]);
+  const [options, setOptions] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
   const [category, setCategory] = useState("");
@@ -45,6 +40,20 @@ const Header = () => {
 
     setBadgeContent(count);
   }, [cart, badgeContent]);
+
+  useEffect(async () => {
+    try {
+      const resp = await axios.get("/categories");
+      setData(resp.data);
+    } catch (err) {
+      // Handle Error Here
+      console.error(err);
+    }
+  }, []);
+
+  useEffect(() => {
+    setOptions(data);
+  }, [data]);
 
   //functions
   const handleProfileMenuOpen = (event) => {
@@ -77,10 +86,13 @@ const Header = () => {
     >
       <MenuItem onClick={handleMenuClose}>
         <Link to="/login" style={{ textDecoration: "none", color: "#000" }}>
-          Giriş Yap
+          <div style={{ fontSize: "0.8rem" }}>Giriş Yap</div>
         </Link>
       </MenuItem>
-      <MenuItem onClick={handleMenuClose}>Üye Ol</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        {" "}
+        <div style={{ fontSize: "0.8rem" }}>Üye Ol</div>
+      </MenuItem>
     </Menu>
   );
 
@@ -133,8 +145,8 @@ const Header = () => {
             <Autocomplete
               style={{ width: 300, backgroundColor: primary[1] }}
               id="combo-box-demo"
-              options={categories}
-              getOptionLabel={(option) => option.label || ""}
+              options={options}
+              getOptionLabel={(option) => option.title || ""}
               value={category}
               onChange={(event, newValue) => {
                 setCategory(newValue);
@@ -148,6 +160,7 @@ const Header = () => {
                   {...params}
                   label={"Kategoriler"}
                   variant="outlined"
+                  size="small"
                 />
               )}
             />
@@ -163,7 +176,13 @@ const Header = () => {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              {userBadge !== "" ? (
+                <Badge badgeContent={userBadge.name} color="secondary">
+                  <AccountCircle />
+                </Badge>
+              ) : (
+                <AccountCircle />
+              )}
             </IconButton>
             <Link to="/cart" style={{ color: "inherit" }}>
               <IconButton

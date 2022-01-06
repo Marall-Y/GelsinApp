@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "../../axios-orders";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
 import Cart from "@material-ui/icons/ShoppingCart";
 import { Box, Button } from "@material-ui/core";
@@ -124,7 +125,7 @@ const Products = () => {
           ))}
         </Box>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

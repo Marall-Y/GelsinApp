@@ -31,6 +31,15 @@ export const cartReducer = (state = initialState, action) => {
         cart: state.cart.filter((item) => item.id !== action.payload.data.id),
       };
 
+    case actionTypes.ADJUST_CART_QTY:
+      return {
+        ...state,
+        cart: state.cart.map((item) =>
+          item.id === action.payload.data.id
+            ? { ...item, qty: +action.payload.qty }
+            : item
+        ),
+      };
     default:
       return state;
   }

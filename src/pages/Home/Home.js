@@ -2,6 +2,7 @@ import { Container } from "@material-ui/core";
 import React, { useState, useEffect } from "react";
 import axios from "../../axios-orders";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import { Box } from "@material-ui/core";
 import useStyles from "./Style";
 import { Link } from "react-router-dom";
@@ -47,7 +48,7 @@ const Home = () => {
           ))}
         </Box>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

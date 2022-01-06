@@ -15,6 +15,8 @@ import Header from "../../components/Header/Header";
 import CartItem from "./CartItem/CartItem";
 import useStyles from "./Style";
 import Map from "../../components/Map/Map";
+import image from "../../images/empty-cart.png";
+import Footer from "../../components/Footer/Footer";
 
 const Cart = () => {
   const classes = useStyles();
@@ -75,8 +77,6 @@ const Cart = () => {
     let price = 0;
 
     cart.forEach((item) => {
-      console.log("item.qty", item.qty);
-      console.log("item.price", item.price);
       items += item.qty;
       price += item.qty * item.price;
     });
@@ -96,7 +96,6 @@ const Cart = () => {
   return (
     <div>
       <Header />
-
       {cart.length !== 0 ? (
         <Container className={classes.cartContainer}>
           <div className={classes.cartItems}>
@@ -153,12 +152,13 @@ const Cart = () => {
         </Container>
       ) : (
         <Container>
-          <div className="empty-cart">
-            {/* <img src={images} alt="empty-cart" /> */}
-            <p>Empty Cart!</p>
+          <div className={classes.emptyCart}>
+            <img src={image} alt="empty-cart" />
+            <p style={{ marginTop: "1rem" }}>Empty Cart!</p>
           </div>
         </Container>
       )}
+      <Footer />
     </div>
   );
 };

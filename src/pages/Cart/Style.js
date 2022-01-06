@@ -31,6 +31,15 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontSize: "0.7rem",
   },
+  emptyCart: {
+    width: "100%",
+    height: "50vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: "5rem",
+  },
 }));
 
 export default useStyles;

@@ -12,6 +12,11 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     minHeight: "100vh",
   },
+  error: {
+    color: "#D62600",
+    padding: "1rem",
+    fontSize: "0.9rem",
+  },
 }));
 
 export default useStyles;

@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import useStyles from "./Style";
 import { primary } from "../../../StyleGuide/Colors";
 import { removeFromCart } from "../../../redux/actions/cart/cartAction";
+import { adjustCartQty } from "../../../redux/actions/cart/cartAction";
 
 const CartItem = ({ itemData }) => {
   const classes = useStyles();
@@ -11,10 +12,10 @@ const CartItem = ({ itemData }) => {
 
   const dispatch = useDispatch();
 
-  //   const onChangeHandler = ({ target }) => {
-  //     setInput(target.value);
-  //     dispatch(adjustCartQty(itemData, target.value));
-  //   };
+  const onChangeHandler = ({ target }) => {
+    setInput(target.value);
+    dispatch(adjustCartQty(itemData, target.value));
+  };
 
   return (
     <div className={classes.cartItem}>
@@ -42,7 +43,7 @@ const CartItem = ({ itemData }) => {
               name="qty"
               value={input}
               className={classes.input}
-              onChange={() => {}}
+              onChange={onChangeHandler}
             />
           </div>
           <DeleteOutlineIcon

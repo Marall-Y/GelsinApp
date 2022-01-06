@@ -7,7 +7,6 @@ import {
 } from "react-google-maps";
 import Geocode from "react-geocode";
 import { Descriptions } from "antd";
-import Autocomplete from "react-google-autocomplete";
 
 Geocode.setApiKey("AIzaSyB4gGlJIoJ1sbWCMSFZcAWv-iwcTq3XgzM");
 
@@ -141,50 +140,26 @@ const Map = () => {
     });
   };
 
-  const onPlaceSelected = (place) => {
-    const address = place.formatted_address,
-      addressArray = place.address_components,
-      city = getCity(addressArray),
-      area = getArea(addressArray),
-      state = getState(addressArray),
-      latValue = place.geometry.location.lat(),
-      lngValue = place.geometry.location.lng();
-
-    // Set these values in the state.
-    setState({
-      address: address ? address : "",
-      area: area ? area : "",
-      city: city ? city : "",
-      state: state ? state : "",
-      markerPosition: {
-        lat: latValue,
-        lng: lngValue,
-      },
-      mapPosition: {
-        lat: latValue,
-        lng: lngValue,
-      },
-    });
-  };
-
   const MapWithAMarker = withScriptjs(
     withGoogleMap((props) => (
-      <GoogleMap
-        defaultZoom={8}
-        defaultCenter={{
-          lat: state.mapPosition.lat,
-          lng: state.mapPosition.lng,
-        }}
-      >
-        <Marker
-          draggable={true}
-          onDragEnd={onDragEnd}
-          position={{
-            lat: state.markerPosition.lat,
-            lng: state.markerPosition.lng,
+      <div>
+        <GoogleMap
+          defaultZoom={8}
+          defaultCenter={{
+            lat: state.mapPosition.lat,
+            lng: state.mapPosition.lng,
           }}
-        ></Marker>
-      </GoogleMap>
+        >
+          <Marker
+            draggable={true}
+            onDragEnd={onDragEnd}
+            position={{
+              lat: state.markerPosition.lat,
+              lng: state.markerPosition.lng,
+            }}
+          ></Marker>
+        </GoogleMap>
+      </div>
     ))
   );
 
@@ -198,16 +173,6 @@ const Map = () => {
       }}
     >
       <div style={{ flex: 1.5 }}>
-        <Autocomplete
-          style={{
-            height: "40px",
-            paddingLeft: "16px",
-            width: "100%",
-          }}
-          onPlaceSelected={onPlaceSelected}
-          types={["(regions)"]}
-          placeholder="Adres Ara"
-        />
         <MapWithAMarker
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4gGlJIoJ1sbWCMSFZcAWv-iwcTq3XgzM&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
